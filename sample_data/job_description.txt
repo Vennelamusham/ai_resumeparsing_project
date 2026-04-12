@@ -1,0 +1,3 @@
+We are looking for a Software Engineer with strong python skills,
+experience in data structures and algorithms, REST api,
+and machine learning knowledge.
