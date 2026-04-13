@@ -30,11 +30,6 @@ A web application that matches a resume with a job description using Natural Lan
 ## Screenshots
 ### UI
 
-
-### Result Output
-![Result](screenshots/result.png)
-
 ## Live Demo
-- 🔗 API: https://ai-resumeparsing-project-6.onrender.com
+- 🔗 API:(https://ai-resumeparsing-project-7.onrender.com)
 
-## 📂 Project Structure
