@@ -1,24 +1,30 @@
-from flask import Flask, jsonify
-from resume_parser import extract_skills
-from job_matcher import calculate_match
+from flask import Flask, request, jsonify
+from resume_parser import extract_text
+from job_matcher import match_resume_job
 
 app = Flask(__name__)
 
-@app.route("/analyze-file", methods=["GET"])
-def analyze_from_file():
-    # Read resume and job description from files
-    resume_text = open("sample_data/resume.txt").read()
-    job_text = open("sample_data/job_description.txt").read()
+@app.route("/")
+def home():
+    return "Resume Matcher Running"
 
-    skills = extract_skills(resume_text)
-    match_score = calculate_match(resume_text, job_text)
+@app.route("/match", methods=["POST"])
+def match():
+    resume_file = request.files['resume']
+    job_file = request.files['job']
 
-    return jsonify({
-        "extracted_skills": skills,
-        "match_percentage": match_score
-    })
+    resume_text = extract_text(resume_file)
+    job_text = extract_text(job_file)
+
+    score = match_resume_job(resume_text, job_text)
+
+    return jsonify({"match_score": score})
+
+import os
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
 
 
