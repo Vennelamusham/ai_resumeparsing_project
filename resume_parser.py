@@ -2,10 +2,10 @@
 
 import PyPDF2
 
-def extract_skills(file):
+def extract_text(file):
     text = ""
     pdf = PyPDF2.PdfReader(file)
     for page in pdf.pages:
-        if page.extract_skills():
-            text += page.extract_skills()
+        if page.extract_text():
+            text += page.extract_text()
     return text.lower()
