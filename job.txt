@@ -1,7 +1,31 @@
-Classical ML and Deep Learning experience 
+We are looking for a passionate AI/ML Engineer with strong knowledge in Python, Machine Learning, and Natural Language Processing.
 
-– GenAI: LLM APIs,RAG patterns, LangChain / LlamaIndex, fine-tuning, prompt engineering at scale – Data: can prepare their own datasets, experience in data processing for structured and highly unstructured data 
+The candidate should have hands-on experience in developing AI-based systems, working with NLP techniques, and building real-time applications.
 
-– Productionisation: writing clean, testable code; working with Docker; understanding how their models will be served 
+Key Responsibilities:
+- Develop machine learning models using Python, NumPy, Pandas, and Scikit-learn
+- Implement Natural Language Processing (NLP) techniques for text analysis and skill extraction
+- Build and deploy REST APIs using Flask for real-world applications
+- Work on projects involving resume screening, job matching, and recommendation systems
+- Perform data preprocessing, feature engineering, model training, and evaluation
 
-– Evaluation mindset: knows how to define and measure quality for both ML models and GenAI applications
+Required Skills:
+- Strong proficiency in Python
+- Experience with Machine Learning and Deep Learning concepts
+- Knowledge of NLP, TF-IDF vectorization, and cosine similarity
+- Experience with Flask and REST API development
+- Familiarity with SQL, Power BI, and data visualization tools
+- Hands-on experience with TensorFlow and OpenCV for computer vision tasks
+
+Preferred Qualifications:
+- Experience in building real-time AI systems such as emotion recognition or automation agents
+- Knowledge of deploying applications using platforms like Render or cloud services
+- Understanding of data analytics and dashboarding
+
+Projects Experience:
+- Resume Screening & Job Matching System using NLP and TF-IDF
+- AI Web Automation Agent using LLM APIs
+- Real-Time Emotion Recognition System using OpenCV and TensorFlow
+- Data Analytics Dashboard using Power BI
+
+We are looking for a candidate who is eager to learn, build scalable AI solutions, and apply machine learning to real-world problems.

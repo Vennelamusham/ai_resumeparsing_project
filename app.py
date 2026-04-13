@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from resume_parser import extract_text
 from job_matcher import calculate_match
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def home():
