@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from resume_parser import extract_text
+from resume_parser import extract_skills
 from job_matcher import match_resume_job
 
 app = Flask(__name__)
@@ -13,8 +13,8 @@ def match():
     resume_file = request.files['resume']
     job_file = request.files['job']
 
-    resume_text = extract_text(resume_file)
-    job_text = extract_text(job_file)
+    resume_text = extract_skills(resume_file)
+    job_text = extract_skills(job_file)
 
     score = match_resume_job(resume_text, job_text)
 
