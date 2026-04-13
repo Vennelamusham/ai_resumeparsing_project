@@ -1,0 +1,7 @@
+Classical ML and Deep Learning experience 
+
+– GenAI: LLM APIs,RAG patterns, LangChain / LlamaIndex, fine-tuning, prompt engineering at scale – Data: can prepare their own datasets, experience in data processing for structured and highly unstructured data 
+
+– Productionisation: writing clean, testable code; working with Docker; understanding how their models will be served 
+
+– Evaluation mindset: knows how to define and measure quality for both ML models and GenAI applications

@@ -14,7 +14,7 @@ def match():
     job_file = request.files['job']
 
     resume_text = extract_text(resume_file)
-    job_text = extract_text(job_file)
+    job_text = job_file.read().decode("utf-8").lower()
 
     score = calculate_match(resume_text, job_text)
 
