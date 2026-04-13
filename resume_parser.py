@@ -1,15 +1,11 @@
 # resume_parser.py
 
-import re
-from skills import SKILLS
+import PyPDF2
 
-def extract_skills(text):
-    text = text.lower()
-    found_skills = []
-
-    for skill in SKILLS:
-        pattern = r'\b' + re.escape(skill) + r'\b'
-        if re.search(pattern, text):
-            found_skills.append(skill)
-
-    return found_skills
+def extract_skills(file):
+    text = ""
+    pdf = PyPDF2.PdfReader(file)
+    for page in pdf.pages:
+        if page.extract_skills():
+            text += page.extract_skills()
+    return text.lower()
